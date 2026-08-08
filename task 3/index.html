@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <img src="images/logo.png" class="logo">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search Movies">
+    </nav>
+
+    <!-- Banner -->
+    <header>
+
+        <div class="overlay">
+
+            <h1>Unlimited Movies, TV Shows and More</h1>
+
+            <p>Watch anywhere. Cancel anytime.</p>
+
+            <button>Watch Now</button>
+
+        </div>
+
+    </header>
+
+    <!-- Movies -->
+
+    <section>
+
+        <h2>Trending Now</h2>
+
+        <div id="movies" class="movie-container">
+
+        </div>
+
+    </section>
+
+    <!-- Popup -->
+
+    <div id="popup" class="popup">
+
+        <div class="popup-content">
+
+            <span id="close">&times;</span>
+
+            <img id="poster">
+
+            <h2 id="title"></h2>
+
+            <p id="description"></p>
+
+            <video controls id="video">
+
+                <source src="videos/trailer.mp4">
+
+            </video>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
